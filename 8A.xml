@@ -5,10 +5,10 @@
 	<remote name="redmi-8"            fetch="https://github.com/redmi-8" />
 	<remote name="mi-sdm439"          fetch="https://github.com/mi-sdm439" />
     <remote name="xiaomi-sdm439-devs" fetch="https://github.com/xiaomi-sdm439-devs" />
-    <remote name="LineageOS"          fetch="https://github.com/LineageOS" />
+    <remote name="Orel6505"          fetch="https://github.com/Orel6505" />
 
     <!-- Device Tree -->
-	<project path="device/xiaomi/olives"        name="android_device_xiaomi_olives-8A"         remote="redmi-8"            revision="Lineage-18.1-Test" />
+	<project path="device/xiaomi/olives"        name="android_device_xiaomi_olives"         remote="Orel6505"            revision="dot-8A" />
 	<project path="device/xiaomi/sdm439-common" name="android_device_xiaomi_sdm439-common"     remote="mi-sdm439"          revision="lineage-18.1-mod" />
 	
     <!-- Vendor Tree -->
@@ -17,5 +17,8 @@
 
     <!-- Kernel Tree -->
 	<project path="kernel/xiaomi/sdm439"        name="android_kernel_xiaomi_sdm439"            remote="xiaomi-sdm439-devs" revision="a11/lineageos" clone-depth="1" />
+	
+	<!-- MOD -->
+	<project path="vendor/miuicamera" name="vendor_Miuicamera" remote="mi-sdm439"          revision="eleven" clone-depth="1" />
 	
 </manifest>
