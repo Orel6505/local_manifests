@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- remotes -->
+	<remote name="mi-sdm439"          fetch="https://github.com/mi-sdm439" />
+    <remote name="LineageOS"          fetch="https://github.com/LineageOS" />
+
+	<!--Q HALs-->
+    <remove-project name="android_hardware_qcom_audio" />
+    <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" remote="LineageOS" revision="lineage-18.1-caf-msm8996" clone-depth="1" />
+    <remove-project name="android_hardware_qcom_media" />
+    <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" remote="LineageOS" revision="lineage-18.1-caf-msm8996" clone-depth="1" />
+    <remove-project name="android_hardware_qcom_display" />
+    <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="mi-sdm439" revision="lineage-18.1-caf-msm8996" clone-depth="1" />
+    
+</manifest>
