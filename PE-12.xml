@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!--remotes -->
+    <remote name="Orel6505"   fetch="https://github.com/Orel6505" />
+    <remote name="Linux4"     fetch="https://github.com/Linux4" />           
+    <remote name="LineageOS"  fetch="https://github.com/LineageOS" />
+    <remote name="TheMuppets" fetch="https://github.com/TheMuppets" />
+
+    <!--Device Tree -->
+	<project name="android_device_samsung_beyond2lte"        path="device/samsung/beyond2lte"        remote="Orel6505"  revision="PE-12-rebase" />
+	<project name="android_device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="Orel6505"  revision="PE-12-rebase" /> 
+	
+	<!--Vendor Tree -->
+    <project name="proprietary_vendor_samsung"               path="vendor/samsung"                   remote="Linux4"    revision="lineage-19.0" clone-depth="1" />
+    
+    <!--Kernel Tree -->
+    <project name=" android_kernel_samsung_exynos9820"       path="kernel/samsung/exynos9820"        remote="Linux4"    revision="lineage-19.0" clone-depth="1" />
+	
+    <!--Samsung HALs-->
+	<project name="android_hardware_samsung"                 path="hardware/samsung"                 remote="Orel6505"  revision="PE-12-rebase" clone-depth="1" />
+	
+</manifest>
