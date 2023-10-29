@@ -1,6 +1,6 @@
 # local_manifests
 1. fork this repo
-2. clone forked repo
+2. clone this forked repo locally
 3. Create .xml file (you can use any name you want)
 4. Copy&Paste this
 
@@ -23,5 +23,5 @@
         </manifest> 
 
 5. replace everything to remotes&repos you need 
-6. upload to forked repo
-7. done
+6. commit&push the changes to forked repo
+7. congragulations! now you can start build your rom! I wish you luck
